@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="home">
+
+    <h1 class="page-heading">Últimas Entradas</h1>
+
+    <ul class="post-list">
+        {% for post in site.posts %}
+        <li>
+            <h2 class="post-title">
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a>
+            </h2>
+            <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+            
+            {{ post.excerpt }} 
+            
+            <a href="{{ post.url | relative_url }}">Seguir leyendo &rarr;</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
