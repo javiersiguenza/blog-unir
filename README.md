@@ -1,96 +1,123 @@
-# Blog UNIR - Javier Sigüenza
+# Blog Personal - Actividad UNIR
 
-Blog personal creado con Jekyll como parte de la **Actividad 1: Laboratorio - Creación de un blog** de la asignatura **Desarrollo de Aplicaciones en Red** de la Universidad Internacional de La Rioja (UNIR).
+Blog interactivo creado con HTML5, CSS3 y JavaScript puro para la actividad de Desarrollo Web de UNIR.
 
-## 🎯 Objetivo del proyecto
+## 📋 Descripción
 
-El objetivo principal de esta actividad es poner en práctica los conceptos básicos relacionados con la programación web (HTML+CSS). A través de este proyecto, se desarrollan las habilidades necesarias para crear un sitio web sencillo desde cero.
+Este proyecto es un blog moderno y completamente funcional que incluye:
 
-## 🛠️ Tecnologías utilizadas
+- **3 artículos completos** con texto e imágenes
+- **Diseño responsive** que se adapta a móviles, tablets y ordenadores
+- **Modo oscuro/claro** con persistencia en localStorage
+- **Sistema de filtrado** de artículos por categoría
+- **Modal interactivo** para leer artículos completos
+- **Animaciones suaves** y efectos visuales
+- **Navegación fluida** con scroll suave
 
-- **Jekyll**: Generador de sitios estáticos
-- **Ruby**: Lenguaje de programación base para Jekyll
-- **Markdown**: Para la redacción de contenido
-- **HTML/CSS**: Para la estructura y estilos
-- **GitHub Pages**: Para el despliegue del sitio
+## 🚀 Características Principales
 
-## 📝 Contenido del blog
+### HTML5
+- Estructura semántica con etiquetas modernas (`<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`)
+- Accesibilidad mejorada
+- Metadatos apropiados
 
-El blog incluye tres entradas que cubren conceptos fundamentales del desarrollo web:
+### CSS3
+- Variables CSS para tematización
+- Flexbox y Grid para layouts responsive
+- Animaciones y transiciones suaves
+- Modo oscuro completo
+- Diseño mobile-first
 
-1. **La estructura es clave: entendiendo el HTML semántico** (23 Oct 2025)
-   - Etiquetas esenciales y semántica
-   - Contenido multimedia
+### JavaScript
+- Toggle de tema oscuro/claro con persistencia
+- Sistema de filtrado dinámico de artículos
+- Modal interactivo para artículos completos
+- Animaciones al hacer scroll (Intersection Observer)
+- Efecto parallax en el hero
+- Navegación suave
+- Contador de visitas en localStorage
 
-2. **La precisión del diseño: selectores de clase y ID** (24 Oct 2025)
-   - Tipos de selectores
-   - El poder de las clases
-
-3. **Dándole estilo a la web: fundamentos del CSS** (25 Oct 2025)
-   - El modelo de caja (Box Model)
-   - Propiedades CSS básicas
-
-## 🚀 Instalación y uso local
-
-### Prerrequisitos
-
-- Ruby (versión 3.1 o superior)
-- Bundler
-
-### Pasos para ejecutar localmente
-
-1. Clonar el repositorio:
-```bash
-git clone https://github.com/javiersiguenza/blog-unir.git
-cd blog-unir
-```
-
-2. Instalar las dependencias:
-```bash
-bundle install
-```
-
-3. Ejecutar el servidor de desarrollo:
-```bash
-bundle exec jekyll serve
-```
-
-4. Abrir el navegador en: `http://localhost:4000`
-
-## 🌐 Sitio en producción
-
-El blog está desplegado en GitHub Pages y disponible en:
-
-**https://javiersiguenza.github.io/blog-unir/**
-
-## 📁 Estructura del proyecto
+## 📂 Estructura del Proyecto
 
 ```
-jekyll_blog/
-├── _config.yml          # Configuración principal de Jekyll
-├── _posts/              # Entradas del blog
-│   ├── 2025-10-23-entrada-sobre-html.md
-│   ├── 2025-10-24-selectores-y-clases.md
-│   └── 2025-10-25-entrada-sobre-css.md
-├── _layouts/            # Plantillas personalizadas
-│   └── home.html
-├── about.markdown       # Página "Acerca de"
-├── index.markdown       # Página principal
-├── Gemfile              # Dependencias de Ruby
-└── .github/
-    └── workflows/
-        └── jekyll.yml   # Workflow para despliegue automático
-
+blog-unir/
+│
+├── index.html          # Página principal
+├── styles.css          # Estilos y diseño
+├── script.js           # Funcionalidad JavaScript
+└── README.md          # Este archivo
 ```
 
-## 👨‍🎓 Autor
+## 🎨 Artículos Incluidos
 
-**Javier Sigüenza**
+1. **El Futuro de la Inteligencia Artificial** (Tecnología)
+   - Explora el impacto de la IA en nuestra vida cotidiana
+   - Aplicaciones actuales y futuras
+   - Consideraciones éticas
 
-- Asignatura: Desarrollo de Aplicaciones en Red
-- Universidad: UNIR (Universidad Internacional de La Rioja)
-- Actividad: Laboratorio 1 - Creación de un blog
+2. **Guía Completa de HTML5 y CSS3** (Desarrollo Web)
+   - Elementos semánticos de HTML5
+   - Características modernas de CSS3
+   - Mejores prácticas
 
-## 📄 Licencia
+3. **JavaScript: De Principiante a Experto** (Programación)
+   - Fundamentos del lenguaje
+   - Conceptos intermedios y avanzados
+   - Frameworks y librerías populares
 
-Este proyecto es parte de una actividad académica para la UNIR.
+## 💻 Cómo Usar
+
+1. Abre el archivo `index.html` en tu navegador preferido
+2. Explora los diferentes artículos
+3. Prueba el filtrado por categorías
+4. Cambia entre modo claro y oscuro
+5. Haz click en "Leer más" para ver el artículo completo
+
+## ✨ Funcionalidades Interactivas
+
+- **Cambio de tema**: Botón en la esquina superior derecha (🌙/☀️)
+- **Filtros**: Botones para filtrar artículos por categoría
+- **Tarjetas animadas**: Efecto hover con zoom y elevación
+- **Modal**: Ventana emergente para leer artículos completos
+- **Scroll suave**: Navegación fluida entre secciones
+- **Efectos visuales**: Animaciones de entrada y parallax
+
+## 🌐 Navegadores Compatibles
+
+- ✅ Chrome (recomendado)
+- ✅ Firefox
+- ✅ Safari
+- ✅ Edge
+- ✅ Opera
+
+## 📱 Responsive Design
+
+El blog está optimizado para:
+- 📱 Móviles (320px - 768px)
+- 📱 Tablets (768px - 1024px)
+- 💻 Desktop (1024px+)
+
+## 🎯 Objetivos de Aprendizaje Cumplidos
+
+✅ Uso correcto de HTML5 semántico
+✅ Estilos modernos con CSS3
+✅ Interactividad con JavaScript
+✅ Diseño responsive
+✅ Accesibilidad web
+✅ Buenas prácticas de desarrollo
+
+## 👨‍💻 Autor
+
+**Javier Siguenza**
+- Actividad de Desarrollo Web - UNIR
+- Fecha: Octubre 2025
+
+## 📝 Notas
+
+- Las imágenes se cargan desde Unsplash (requiere conexión a internet)
+- El tema seleccionado se guarda en localStorage
+- Todos los datos de los artículos están en `script.js`
+
+---
+
+**¡Disfruta explorando el blog!** 🚀

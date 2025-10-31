@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal - UNIR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Mi Blog</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#articulos">Artículos</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h2 class="hero-title">Bienvenido a mi blog</h2>
+            <p class="hero-subtitle">Explorando el mundo de la tecnología y el desarrollo web</p>
+            <button class="cta-button" onclick="scrollToArticles()">Ver artículos</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container" id="articulos">
+        <h2 class="section-title">Últimos artículos</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="todos">Todos</button>
+            <button class="filter-btn" data-category="tecnologia">Tecnología</button>
+            <button class="filter-btn" data-category="desarrollo">Desarrollo web</button>
+            <button class="filter-btn" data-category="programacion">Programación</button>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="articles-grid" id="articlesGrid">
+            <!-- Article 1 -->
+            <article class="article-card" data-category="tecnologia" data-id="1">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop" alt="Inteligencia Artificial">
+                    <span class="article-badge">Tecnología</span>
+                </div>
+                <div class="article-content">
+                    <h3 class="article-title">El Futuro de la Inteligencia Artificial</h3>
+                    <p class="article-meta">
+                        <span>📅 28 Oct 2025</span>
+                        <span>⏱️ 5 min lectura</span>
+                    </p>
+                    <p class="article-excerpt">
+                        La inteligencia artificial está transformando radicalmente nuestra forma de vivir y trabajar. 
+                        Desde asistentes virtuales hasta vehículos autónomos, la IA se ha convertido en una parte 
+                        fundamental de nuestro día a día.
+                    </p>
+                    <button class="read-more" onclick="openArticle(1)">Leer más →</button>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-card" data-category="desarrollo" data-id="2">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=500&fit=crop" alt="Desarrollo Web">
+                    <span class="article-badge">Desarrollo web</span>
+                </div>
+                <div class="article-content">
+                    <h3 class="article-title">Guía Completa de HTML5 y CSS3</h3>
+                    <p class="article-meta">
+                        <span>📅 25 Oct 2025</span>
+                        <span>⏱️ 8 min lectura</span>
+                    </p>
+                    <p class="article-excerpt">
+                        HTML5 y CSS3 son los pilares fundamentales del desarrollo web moderno. En este artículo 
+                        exploraremos las mejores prácticas y las características más importantes de estas tecnologías 
+                        que todo desarrollador debe conocer.
+                    </p>
+                    <button class="read-more" onclick="openArticle(2)">Leer más →</button>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-card" data-category="programacion" data-id="3">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop" alt="JavaScript">
+                    <span class="article-badge">Programación</span>
+                </div>
+                <div class="article-content">
+                    <h3 class="article-title">JavaScript: De Principiante a Experto</h3>
+                    <p class="article-meta">
+                        <span>📅 20 Oct 2025</span>
+                        <span>⏱️ 10 min lectura</span>
+                    </p>
+                    <p class="article-excerpt">
+                        JavaScript es el lenguaje de programación más popular del mundo. Aprende desde los conceptos 
+                        básicos hasta técnicas avanzadas que te permitirán crear aplicaciones web interactivas y 
+                        dinámicas.
+                    </p>
+                    <button class="read-more" onclick="openArticle(3)">Leer más →</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Modal para artículo completo -->
+    <div class="modal" id="articleModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre mi blog</h3>
+                    <p>Un espacio dedicado a compartir conocimientos sobre tecnología, desarrollo web y programación.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#articulos">Artículos</a></li>
+                        <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Sígueme</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mi Blog - Actividad UNIR. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
