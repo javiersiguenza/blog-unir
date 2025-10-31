@@ -14,7 +14,7 @@ Este proyecto es un blog moderno y completamente funcional que incluye:
 - **Animaciones suaves** y efectos visuales
 - **Navegación fluida** con scroll suave
 
-## 🚀 Características Principales
+## 🚀 Características principales
 
 ### HTML5
 - Estructura semántica con etiquetas modernas (`<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`)
@@ -37,7 +37,7 @@ Este proyecto es un blog moderno y completamente funcional que incluye:
 - Navegación suave
 - Contador de visitas en localStorage
 
-## 📂 Estructura del Proyecto
+## 📂 Estructura del proyecto
 
 ```
 blog-unir/
@@ -48,32 +48,38 @@ blog-unir/
 └── README.md          # Este archivo
 ```
 
-## 🎨 Artículos Incluidos
+## 🎨 Artículos incluidos
 
-1. **El Futuro de la Inteligencia Artificial** (Tecnología)
+1. **El futuro de la inteligencia artificial** (Tecnología)
    - Explora el impacto de la IA en nuestra vida cotidiana
    - Aplicaciones actuales y futuras
    - Consideraciones éticas
 
-2. **Guía Completa de HTML5 y CSS3** (Desarrollo Web)
+2. **Guía completa de HTML5 y CSS3** (Desarrollo web)
    - Elementos semánticos de HTML5
    - Características modernas de CSS3
    - Mejores prácticas
 
-3. **JavaScript: De Principiante a Experto** (Programación)
+3. **JavaScript: de principiante a experto** (Programación)
    - Fundamentos del lenguaje
    - Conceptos intermedios y avanzados
    - Frameworks y librerías populares
 
-## 💻 Cómo Usar
+## 💻 Cómo usar
 
+### Localmente
 1. Abre el archivo `index.html` en tu navegador preferido
 2. Explora los diferentes artículos
 3. Prueba el filtrado por categorías
 4. Cambia entre modo claro y oscuro
 5. Haz click en "Leer más" para ver el artículo completo
 
-## ✨ Funcionalidades Interactivas
+### GitHub Pages
+El blog se despliega automáticamente en GitHub Pages mediante GitHub Actions cada vez que se hace push a la rama `main`.
+
+URL del sitio: `https://javiersiguenza.github.io/blog-unir/`
+
+## ✨ Funcionalidades interactivas
 
 - **Cambio de tema**: Botón en la esquina superior derecha (🌙/☀️)
 - **Filtros**: Botones para filtrar artículos por categoría
@@ -82,7 +88,7 @@ blog-unir/
 - **Scroll suave**: Navegación fluida entre secciones
 - **Efectos visuales**: Animaciones de entrada y parallax
 
-## 🌐 Navegadores Compatibles
+## 🌐 Navegadores compatibles
 
 - ✅ Chrome (recomendado)
 - ✅ Firefox
@@ -90,14 +96,29 @@ blog-unir/
 - ✅ Edge
 - ✅ Opera
 
-## 📱 Responsive Design
+## � Despliegue
+
+Este proyecto se despliega automáticamente en GitHub Pages usando GitHub Actions.
+
+### Configuración inicial (solo una vez):
+1. Ve a la configuración de tu repositorio en GitHub
+2. Navega a **Settings** > **Pages**
+3. En **Source**, selecciona **GitHub Actions**
+4. El workflow se ejecutará automáticamente en cada push a `main`
+
+### Despliegue automático:
+- Cada vez que hagas push a la rama `main`, el sitio se actualizará automáticamente
+- El workflow está configurado en `.github/workflows/deploy.yml`
+- Puedes ver el estado del despliegue en la pestaña "Actions" de tu repositorio
+
+## �📱 Diseño responsive
 
 El blog está optimizado para:
 - 📱 Móviles (320px - 768px)
 - 📱 Tablets (768px - 1024px)
 - 💻 Desktop (1024px+)
 
-## 🎯 Objetivos de Aprendizaje Cumplidos
+## 🎯 Objetivos de aprendizaje cumplidos
 
 ✅ Uso correcto de HTML5 semántico
 ✅ Estilos modernos con CSS3
